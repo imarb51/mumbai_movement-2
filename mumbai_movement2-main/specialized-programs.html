@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialized Programs - Mumbai Movement Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Programs <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="kids-programs.html">Kids Programs</a></li>
+                        <li><a href="adults-programs.html">Adults Programs</a></li>
+                        <li><a href="specialized-programs.html">Specialized Programs</a></li>
+                    </ul>
+                </li>
+                <li><a href="parkour.html">What is Parkour</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="./book-trial.html" class="btn-nav-trial">BOOK TRIAL CLASS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero programs-hero" style="background-image: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1600&q=80');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">SPECIALIZED TRAINING</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Beyond individual classes, we work with organisations and institutions</p>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="program-page-intro">
+        <div class="container">
+            <p class="program-page-lead">Beyond individual classes, we work with organisations and institutions to deliver structured movement programs tailored to specific needs.</p>
+        </div>
+    </section>
+
+    <div class="programs-grid-wrapper">
+        <div class="programs-grid">
+    <!-- School Programs -->
+    <section class="program-detail-section" id="schools">
+        <div class="container">
+            <div class="program-detail-card">
+                <div class="program-detail-header">
+                    <div class="program-detail-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 45 L50 25 L80 45 L80 80 L20 80 Z" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                            <rect x="40" y="55" width="20" height="25" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                            <path d="M50 25 L50 15" stroke="#4E89B2" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="program-detail-title">Parkour in Schools</h2>
+                        <span class="program-age-badge">Institutional</span>
+                    </div>
+                </div>
+
+                <div class="program-detail-image">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80" alt="School parkour program">
+                </div>
+
+                <div class="program-detail-body">
+                    <div class="program-detail-block">
+                        <h3>What we offer</h3>
+                        <p>We partner with schools to introduce structured movement programs that support physical development, confidence, and focus in children. Our school programs are age-appropriate, safe, and aligned with educational environments.</p>
+                    </div>
+
+                    <div class="program-detail-block">
+                        <h3>Why schools choose MMA</h3>
+                        <ul class="program-detail-list">
+                            <li>Structured curriculum</li>
+                            <li>Focus on safety and development</li>
+                            <li>Builds confidence and coordination in children</li>
+                        </ul>
+                    </div>
+
+                    <div class="program-detail-block">
+                        <h3>Schools we work with</h3>
+                        <div class="school-logos-grid">
+                            <div class="school-logo-item">The American School of Bombay</div>
+                            <div class="school-logo-item">DSB International</div>
+                            <div class="school-logo-item">Lycée Français International de Mumbai</div>
+                            <div class="school-logo-item">JBCN International</div>
+                            <div class="school-logo-item">HVB Global Academy</div>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20School%20Programs" class="btn-program-cta btn-program-soft" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Enquire About School Programs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Training -->
+    <section class="program-detail-section" id="corporate">
+        <div class="container">
+            <div class="program-detail-card">
+                <div class="program-detail-header">
+                    <div class="program-detail-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="30" width="60" height="50" rx="5" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                            <path d="M35 30 L35 20 L65 20 L65 30" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                            <circle cx="50" cy="55" r="10" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="program-detail-title">Corporate Team Building</h2>
+                        <span class="program-age-badge">Corporate</span>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Corporate team building">
+                </div>
+                <div class="program-detail-body">
+                    <div class="program-detail-block">
+                        <h3>What this includes</h3>
+                        <p>Movement-based workshops designed to improve communication, trust, and teamwork.</p>
+                    </div>
+
+                    <div class="program-detail-block">
+                        <h3>Good for</h3>
+                        <ul class="program-detail-list">
+                            <li>Team bonding</li>
+                            <li>Stress relief</li>
+                            <li>Experiential learning</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20Corporate%20Training" class="btn-program-cta btn-program-soft" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Enquire About Corporate Sessions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Army & Tactical -->
+    <section class="program-detail-section" id="army">
+        <div class="container">
+            <div class="program-detail-card">
+                <div class="program-detail-header">
+                    <div class="program-detail-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 15 L60 35 L80 35 L65 50 L70 70 L50 58 L30 70 L35 50 L20 35 L40 35 Z" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="program-detail-title">Army & Tactical Training</h2>
+                        <span class="program-age-badge">Professional</span>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=800&q=80" alt="Tactical training">
+                </div>
+                <div class="program-detail-body">
+                    <div class="program-detail-block">
+                        <h3>What this focuses on</h3>
+                        <p>Functional movement, agility, and adaptability training for professionals working in demanding environments.</p>
+                    </div>
+
+                    <a href="about.html" class="btn-program-cta">Learn About Our Training Experience with Indian Army →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Parties -->
+    <section class="program-detail-section" id="birthdays">
+        <div class="container">
+            <div class="program-detail-card">
+                <div class="program-detail-header">
+                    <div class="program-detail-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="25" y="45" width="50" height="35" rx="5" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                            <path d="M35 45 L35 35 M50 45 L50 30 M65 45 L65 35" stroke="#4E89B2" stroke-width="3"/>
+                            <circle cx="35" cy="30" r="4" fill="#4E89B2"/>
+                            <circle cx="50" cy="25" r="4" fill="#4E89B2"/>
+                            <circle cx="65" cy="30" r="4" fill="#4E89B2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="program-detail-title">Birthday Parties & Special Events</h2>
+                        <span class="program-age-badge">Events</span>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80" alt="Birthday party event">
+                </div>
+                <div class="program-detail-body">
+                    <div class="program-detail-block">
+                        <h3>Looking for a fun and active way to celebrate?</h3>
+                        <p>We host Parkour-based birthday parties where children can move, climb, and play safely under supervision. Programs are customised based on age and group size.</p>
+                    </div>
+
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20planning%20a%20Birthday%20Party" class="btn-program-cta btn-program-soft" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Plan a Birthday Party With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Design -->
+    <section class="program-detail-section" id="equipment">
+        <div class="container">
+            <div class="program-detail-card">
+                <div class="program-detail-header">
+                    <div class="program-detail-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 75 L75 75 L75 35 L55 35 L55 25 L45 25 L45 35 L25 35 Z" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                            <rect x="35" y="50" width="30" height="15" rx="3" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="program-detail-title">Equipment Design & Setup</h2>
+                        <span class="program-age-badge">Setup</span>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&q=80" alt="Parkour equipment setup">
+                </div>
+                <div class="program-detail-body">
+                    <div class="program-detail-block">
+                        <p>MMA also designs and builds custom Parkour equipment and training setups for schools, gyms, and private spaces. All setups are designed with safety, durability, and functional movement in mind.</p>
+                    </div>
+
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20Equipment%20Setup" class="btn-program-cta btn-program-soft" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Talk to Us About Equipment Setup
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Film & Action Training -->
+    <section class="program-detail-section" id="film">
+        <div class="container">
+            <div class="program-detail-card">
+                <div class="program-detail-header">
+                    <div class="program-detail-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="20" y="25" width="60" height="50" rx="5" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                            <polygon points="42,40 42,60 62,50" fill="#4E89B2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="program-detail-title">Film & Action Training</h2>
+                        <span class="program-age-badge">Creative</span>
+                    </div>
+                </div>
+                <div class="program-detail-image">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&q=80" alt="Film and action training">
+                </div>
+                <div class="program-detail-body">
+                    <div class="program-detail-block">
+                        <p>We work with film, advertising, and live performance projects to design movement that looks natural, powerful, and believable on screen. Our team supports creative projects by bringing movement expertise into the storytelling process.</p>
+                    </div>
+
+                    <div class="program-detail-block">
+                        <h3>This includes</h3>
+                        <ul class="program-detail-list">
+                            <li>Preparing actors for physically demanding roles</li>
+                            <li>Designing action movement that feels authentic and repeatable</li>
+                            <li>Supporting scenes that require agility, speed, or physical expression</li>
+                        </ul>
+                    </div>
+
+                    <div class="program-detail-block">
+                        <h3>How We Work With Productions</h3>
+                        <p>We collaborate closely with directors, stunt coordinators, choreographers, and production teams at different stages of a project. We assist with refining movement sequences so they can be performed safely, consistently, and in sync with the creative vision.</p>
+                    </div>
+
+                    <div class="program-detail-block">
+                        <h3>Why Movement Training Matters on Screen</h3>
+                        <ul class="program-detail-list">
+                            <li>Reduces the risk of injury during repeated takes</li>
+                            <li>Helps performers move naturally instead of "acting" physicality</li>
+                            <li>Makes action sequences look fluid and believable</li>
+                            <li>Saves time on set by improving confidence and consistency</li>
+                        </ul>
+                    </div>
+
+                    <div class="program-detail-block">
+                        <h3>We work with</h3>
+                        <ul class="program-detail-list">
+                            <li>Film and OTT productions</li>
+                            <li>Advertising agencies and brands</li>
+                            <li>Creative teams looking for movement-based storytelling support</li>
+                        </ul>
+                        <p style="margin-top: 1rem; color: var(--text-gray);">Projects can range from short campaigns to long-term preparation for roles.</p>
+                    </div>
+
+                    <div class="program-detail-block" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(78, 137, 178, 0.2);">
+                        <p style="font-style: italic; color: var(--text-gray); margin-bottom: 1rem;">Interested in collaborating on a creative project?</p>
+                    </div>
+
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20discussing%20a%20Creative%20Project" class="btn-program-cta btn-program-soft" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Discuss a Creative Project With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="program-cta-section">
+        <div class="container">
+            <div class="program-cta-card">
+                <h2>Not Sure Which Program Is Right?</h2>
+                <p>Talk to us and we'll help you choose a program based on age, comfort level, and goals.</p>
+                <div class="program-cta-buttons">
+                    <a href="https://wa.me/919876543210" class="btn-program-cta btn-program-primary" target="_blank">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Talk to Us on WhatsApp
+                    </a>
+                    <a href="./book-trial.html" class="btn-program-cta btn-program-outline">Book a Trial Class</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+                    </div>
+                    <p class="footer-description">Mumbai Movement Academy - Redefining fitness through movement since 2019.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@MumbaiMovementAcademy" target="_blank" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column" id="links">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="./book-trial.html">Contact</a></li>
+                        <li><a href="https://wa.me/919876543210" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column" id="locations">
+                    <h4>OUR LOCATIONS</h4>
+                    <ul>
+                        <li><a href="locations.html">Andheri</a></li>
+                        <li><a href="locations.html">Bandra</a></li>
+                        <li><a href="locations.html">Powai</a></li>
+                        <li><a href="locations.html">Juhu</a></li>
+                        <li><a href="locations.html">Breach Candy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column" id="contact">
+                    <h4>CONTACT</h4>
+                    <ul class="contact-info">
+                        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li><a href="mailto:info@mumbaima.com">info@mumbaima.com</a></li>
+                        <li class="hours">Mon-Fri: 10 AM - 9 PM</li>
+                        <li class="hours">Sat: 9 AM - 7 PM</li>
+                        <li class="hours">Sun: 10 AM - 5 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mumbai Movement Academy. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

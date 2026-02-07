@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMA - Mumbai Movement Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Programs <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="kids-programs.html">Kids Programs</a></li>
+                        <li><a href="adults-programs.html">Adults Programs</a></li>
+                        <li><a href="specialized-programs.html">Specialized Programs</a></li>
+                    </ul>
+                </li>
+                <li><a href="parkour.html">What is Parkour</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="./book-trial.html" class="btn-nav-trial">BOOK TRIAL CLASS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">MOVEMENT TRAINING THAT HELPS CHILDREN GROW STRONGER, SAFER, AND MORE CONFIDENT.</h1>
+            <div class="hero-bottom animate-fade-in-delay">
+                <p class="hero-primary-text">Not sure if this is right for your child or for you? We are here to help.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/919876543210" class="btn-hero-whatsapp" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/>
+                        </svg>
+                        Talk to Us
+                    </a>
+                    <a href="./book-trial.html" class="btn-hero-trial">
+                        Book a Trial Class
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is This For Section -->
+    <section class="who-is-this-for" id="who">
+        <div class="container">
+            <h2 class="section-title">Who Is This For?</h2>
+            <p class="section-subtitle">We work with different age groups in different ways, because movement should grow with the person doing it.</p>
+            
+            <div class="audience-grid">
+                <!-- Kids & Toddlers -->
+                <div class="audience-card animate-on-scroll">
+                    <div class="audience-header">
+                        <div class="audience-icon">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="35" r="15" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                                <path d="M35 55 Q35 50 40 48 L50 45 L60 48 Q65 50 65 55 L65 75 M40 55 L40 85 M60 55 L60 85" stroke="#4E89B2" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="audience-title">Kids & Toddlers <span class="age-range">(2 to 9 years)</span></h3>
+                    </div>
+                    <p class="audience-description">A fun and safe introduction to movement for young children. Classes focus on balance, coordination, and confidence, using age-appropriate equipment and constant coach supervision.</p>
+                    <p class="audience-section-title">We ensure:</p>
+                    <ul class="audience-features">
+                        <li>Small groups</li>
+                        <li>Safe indoor setups</li>
+                        <li>Focus on learning, not competition</li>
+                    </ul>
+                    <a href="kids-programs.html" class="audience-cta">Learn about Kids Programs</a>
+                </div>
+
+                <!-- Teens -->
+                <div class="audience-card animate-on-scroll">
+                    <div class="audience-header">
+                        <div class="audience-icon">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="50" cy="35" r="15" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                                <path d="M30 55 L50 50 L70 55 L70 85 L30 85 Z" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                                <path d="M50 50 L50 85" stroke="#4E89B2" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="audience-title">Teens <span class="age-range">(10 to 14 years)</span></h3>
+                    </div>
+                    <p class="audience-description">For growing bodies that need strength, control, and confidence. Training helps teenagers develop body awareness, discipline, and resilience in a structured and supportive environment.</p>
+                    <p class="audience-section-title">What this supports:</p>
+                    <ul class="audience-features">
+                        <li>Strength and coordination</li>
+                        <li>Confidence and focus</li>
+                        <li>Clear progression through levels</li>
+                    </ul>
+                    <a href="kids-programs.html#teens" class="audience-cta">Explore Teen Training</a>
+                </div>
+
+                <!-- Adults -->
+                <div class="audience-card animate-on-scroll">
+                    <div class="audience-header">
+                        <div class="audience-icon">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35 50 L50 35 L65 50 L50 65 Z" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                                <circle cx="50" cy="50" r="25" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3 class="audience-title">Adults</h3>
+                    </div>
+                    <p class="audience-description">You do not need any prior experience to start. Our adult classes are designed for beginners as well as people looking to improve strength, mobility, and overall fitness through movement.</p>
+                    <p class="audience-section-title">Good fit if you are:</p>
+                    <ul class="audience-features">
+                        <li>New to fitness</li>
+                        <li>Looking for something different from the gym</li>
+                        <li>Wanting to move better, not just work out</li>
+                    </ul>
+                    <a href="adults-programs.html" class="audience-cta">Explore Adult Classes</a>
+                </div>
+
+                <!-- Schools & Corporates -->
+                <div class="audience-card animate-on-scroll">
+                    <div class="audience-header">
+                        <div class="audience-icon">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="25" y="35" width="50" height="45" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                                <path d="M25 35 L50 20 L75 35" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                                <rect x="42" y="55" width="16" height="25" fill="#4E89B2"/>
+                            </svg>
+                        </div>
+                        <h3 class="audience-title">Schools & Organisations</h3>
+                    </div>
+                    <p class="audience-description">We work with schools and organisations to bring structured movement training into education and professional environments.</p>
+                    <p class="audience-section-title">Programs include:</p>
+                    <ul class="audience-features">
+                        <li>School-based Parkour programs</li>
+                        <li>Corporate team-building workshops</li>
+                        <li>Tactical and functional movement training</li>
+                    </ul>
+                    <a href="specialized-programs.html" class="audience-cta">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Train Section -->
+    <section class="what-we-offer" id="programs">
+        <div class="container">
+            <h2 class="section-title">What We Train</h2>
+            <p class="section-subtitle">World-class training programs designed to transform how you move</p>
+        </div>
+            
+        <div class="train-scroller">
+            <!-- Parkour Card -->
+            <div class="train-card animate-on-scroll">
+                <div class="train-card-left">
+                    <div class="train-card-top">
+                        <div class="train-icon">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 30 L70 50 L50 70 L30 50 Z" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                                <circle cx="50" cy="30" r="3" fill="#4E89B2"/>
+                                <circle cx="70" cy="50" r="3" fill="#4E89B2"/>
+                                <circle cx="50" cy="70" r="3" fill="#4E89B2"/>
+                                <circle cx="30" cy="50" r="3" fill="#4E89B2"/>
+                            </svg>
+                        </div>
+                        <h3 class="train-title">PARKOUR</h3>
+                    </div>
+                    <p class="train-desc">Parkour at MMA is taught in a controlled, indoor environment with trained coaches. Students learn how to jump, land, climb, and move safely through obstacles.</p>
+                    <ul class="train-features">
+                        <li>Improves balance and coordination</li>
+                        <li>Builds confidence and problem-solving</li>
+                        <li>Emphasises safety, not stunts</li>
+                    </ul>
+                    <a href="parkour.html" class="train-link">Explore Parkour →</a>
+                </div>
+            </div>
+
+            <!-- Rock Climbing Card -->
+            <div class="train-card animate-on-scroll">
+                <div class="train-card-left">
+                    <div class="train-card-top">
+                        <div class="train-icon">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 80 L40 60 L50 70 L60 40 L70 50 L80 20" stroke="#4E89B2" stroke-width="3" fill="none"/>
+                                <circle cx="40" cy="60" r="3" fill="#4E89B2"/>
+                                <circle cx="60" cy="40" r="3" fill="#4E89B2"/>
+                                <circle cx="80" cy="20" r="3" fill="#4E89B2"/>
+                            </svg>
+                        </div>
+                        <h3 class="train-title">ROCK CLIMBING</h3>
+                    </div>
+                    <p class="train-desc">Rock climbing helps develop full-body strength, focus, and patience. All sessions are supervised with safety equipment suited to the student's level.</p>
+                    <ul class="train-features">
+                        <li>Upper and lower body strength</li>
+                        <li>Grip, balance, and coordination</li>
+                        <li>Mental focus and planning</li>
+                    </ul>
+                    <a href="adults-programs.html#climbing" class="train-link">Explore Rock Climbing →</a>
+                </div>
+            </div>
+
+            <!-- Calisthenics Card -->
+            <div class="train-card animate-on-scroll">
+                <div class="train-card-left">
+                    <div class="train-card-top">
+                        <div class="train-icon">
+                            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50 20 L50 80 M30 40 L70 40" stroke="#4E89B2" stroke-width="4" stroke-linecap="round"/>
+                                <path d="M35 25 L65 25 L60 35 L40 35 Z" fill="#4E89B2"/>
+                            </svg>
+                        </div>
+                        <h3 class="train-title">CALISTHENICS</h3>
+                    </div>
+                    <p class="train-desc">Calisthenics is strength training using your own body weight. Classes focus on building strength, mobility, and control in a gradual, beginner-friendly way.</p>
+                    <ul class="train-features">
+                        <li>No heavy weights involved</li>
+                        <li>Progresses at your own pace</li>
+                        <li>Suitable for beginners and adults</li>
+                    </ul>
+                    <a href="adults-programs.html#calisthenics" class="train-link">Explore Calisthenics →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why MMA Section -->
+    <section class="why-mma" id="about">
+        <div class="container">
+            <h2 class="section-title">Why Should You Choose MMA</h2>
+            <p class="section-subtitle">Choosing the right place to train matters. Here's what sets MMA apart.</p>
+
+            <!-- Experience Section -->
+            <div class="experience-content">
+                <h3 class="subsection-title">Experience You Can Trust</h3>
+                <p class="content-text">Mumbai Movement Academy has been training children, teens, and adults since 2019. Over the years, we've worked with beginners, young children, athletes, and professionals, always focusing on safe and structured movement.</p>
+                <p class="content-text">Our classes follow a clear structure. Students progress step by step, building strength, coordination, and confidence at a pace suited to their age and ability.</p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll">
+                    <h3 class="stat-number">5+</h3>
+                    <p class="stat-label">Years of Experience</p>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <h3 class="stat-number">1000+</h3>
+                    <p class="stat-label">Students Trained</p>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <h3 class="stat-number">5</h3>
+                    <p class="stat-label">Locations</p>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <h3 class="stat-number">50+</h3>
+                    <p class="stat-label">Certified Coaches</p>
+                </div>
+            </div>
+
+            <!-- Safety Section -->
+            <div class="safety-content">
+                <h3 class="subsection-title">Safety Comes First</h3>
+                <p class="content-text">Safety is built into how we train. From indoor setups and age-appropriate equipment to trained coaches and small group attention, every class is designed to minimise risk while encouraging learning.</p>
+            </div>
+
+            <!-- Credibility Statement -->
+            <div class="credibility-content">
+                <h3 class="subsection-title">Trusted by Schools and Institutions</h3>
+                <p class="content-text">MMA works with leading international schools across Mumbai and has trained professionals from organisations such as the Indian Army. We've trained students from 20+ schools and conducted specialized training programs for Indian Army personnel.</p>
+            </div>
+
+            
+
+            <!-- Testimonials -->
+            <div class="testimonials-section">
+                <h3 class="subsection-title">Voices From Our Community</h3>
+                <p class="testimonials-intro">Parents, students, and partners often tell us the same thing: they see real change, not just physical improvement.</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-image">
+                            <img src="img/2025_04_29_Day1-5.jpg" alt="Student Training">
+                        </div>
+                        <p class="testimonial-text">"My daughter has gained so much confidence since joining MMA. She's more active, focused, and actually looks forward to her classes every week!"</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Priya Sharma</p>
+                            <p class="author-role">Parent of 8-year-old student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-image">
+                            <img src="img/2025_04_29_Day1-11.jpg" alt="Adult Training">
+                        </div>
+                        <p class="testimonial-text">"I started with zero fitness background. The coaches at MMA made me feel comfortable from day one, and now I can do things I never thought possible."</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Amit Desai</p>
+                            <p class="author-role">Adult Student</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card animate-on-scroll">
+                        <div class="testimonial-image">
+                            <img src="img/2025_04_29_Day1-28.jpg" alt="Group Training">
+                        </div>
+                        <p class="testimonial-text">"We've partnered with MMA for our school's PE program. The structured approach and focus on safety have been exceptional. Our students love it."</p>
+                        <div class="testimonial-author">
+                            <p class="author-name">Mumbai International School</p>
+                            <p class="author-role">School Partner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Meet Our Founders
+            
+        </div> -->
+
+        <!-- CTA for this section -->
+        <!-- <div class="section-cta">
+            <p class="cta-text">Still unsure? Talk to us and we'll help you decide what's right.</p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/919876543210" class="btn btn-primary" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/>
+                    </svg>
+                    TALK TO US ON WHATSAPP
+                </a>
+                <a href="./book-trial.html" class="btn btn-outline">BOOK A TRIAL CLASS</a>
+            </div>
+        </div> -->
+    </div>
+    </section>
+
+    <!-- Founder Modals -->
+    <div id="founder1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeFounderModal('founder1')">&times;</span>
+            <div class="modal-body">
+                <img src="img/Dr. Rishi Prasad.JPG" alt="Dr. Rishi Prasad">
+                <div class="modal-text">
+                    <h2>Dr. Rishi Prasad</h2>
+                    <h3>Co-Founder & Head Coach</h3>
+                    <p>Dr. Rishi Prasad is a certified sports physiotherapist with over 15 years of experience in movement science. He pioneered the integration of parkour with rehabilitation techniques, creating a unique training methodology that emphasizes injury prevention and functional fitness.</p>
+                    <p>Under his guidance, Mumbai Movement Academy has become a leading institution for movement education in India. His philosophy centers on making movement accessible to everyone, regardless of age or fitness level.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="founder2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeFounderModal('founder2')">&times;</span>
+            <div class="modal-body">
+                <img src="img/Cyrus Khan.JPG" alt="Cyrus Khan">
+                <div class="modal-text">
+                    <h2>Cyrus Khan</h2>
+                    <h3>Co-Founder & Movement Director</h3>
+                    <p>Cyrus Khan is one of India's first professional parkour athletes and has represented the country at international competitions. With expertise in freerunning, calisthenics, and stunt coordination, he brings a creative and dynamic approach to movement training.</p>
+                    <p>He has worked with major brands like Red Bull and Nike, and has coached elite performers including Bollywood stunt teams and Indian Army Special Forces.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="founder3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeFounderModal('founder3')">&times;</span>
+            <div class="modal-body">
+                <img src="img/Krishna Mehta.jpg" alt="Krishna Mehta">
+                <div class="modal-text">
+                    <h2>Krishna Mehta</h2>
+                    <h3>Co-Founder & Business Development</h3>
+                    <p>Krishna Mehta brings her MBA and corporate strategy background to scale Mumbai Movement Academy from a single studio to five locations across Mumbai. Her vision extends beyond just training facilities — she's building a movement culture.</p>
+                    <p>She has established partnerships with schools, universities, and corporate organizations, making movement training accessible to thousands of individuals across different demographics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Academy Section -->
+    <!-- <section class="academy-section" id="levels">
+        <div class="container">
+            <h2 class="section-title">The Academy</h2>
+            <p class="section-subtitle">Our progressive level system ensures structured growth from beginner to world-class athlete</p>
+
+            
+            <div class="philosophy-section">
+                <h3 class="subsection-title">Our Philosophy</h3>
+                <p class="philosophy-intro">Movement is more than physical training — it's a mindset. At MMA, we focus on three pillars:</p>
+                
+                <div class="philosophy-grid">
+                    <div class="philosophy-card animate-on-scroll">
+                        <h4>Progression</h4>
+                        <p>Every skill builds on the last. We never rush. Safety and technique come first.</p>
+                    </div>
+                    <div class="philosophy-card animate-on-scroll">
+                        <h4>Community</h4>
+                        <p>Train together, grow together. Our community supports every member's journey.</p>
+                    </div>
+                    <div class="philosophy-card animate-on-scroll">
+                        <h4>Expression</h4>
+                        <p>Find your unique style. Movement is art, and you are the artist.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Training in Action Section -->
+    <section class="training-in-action" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Training in Action</h2>
+            <p class="section-subtitle">See our students push their limits and achieve incredible feats</p>
+            
+            <div class="gallery-grid">
+                <!-- Image/Video Cards -->
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=800&q=80" alt="Parkour training">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Parkour Session</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=800&q=80" alt="Rock climbing">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Rock Climbing</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Calisthenics">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Calisthenics Training</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?auto=format&fit=crop&w=800&q=80" alt="Kids class">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Kids Program</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Group training">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Group Session</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Advanced moves">
+                    <div class="gallery-overlay">
+                        <p class="gallery-caption">Advanced Training</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="video-section">
+                <h3 class="subsection-title">Watch Us in Action</h3>
+                <p class="section-subtitle">See our students and coaches in training sessions</p>
+                
+                <div class="portrait-video-grid">
+                    <!-- Toddler Class Videos -->
+                    <div class="portrait-video-card">
+                        <div class="video-label">Toddler Class</div>
+                        <iframe src="https://www.youtube.com/embed/vK6HbmdLRQA" 
+                                title="Toddler Class 1"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="portrait-video-card">
+                        <div class="video-label">Toddler Class</div>
+                        <iframe src="https://www.youtube.com/embed/pV5uhtd774w" 
+                                title="Toddler Class 2"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    
+                    <!-- Adults Training Videos -->
+                    <div class="portrait-video-card">
+                        <div class="video-label">Adults Training</div>
+                        <iframe src="https://www.youtube.com/embed/zpUiduNAfKc" 
+                                title="Adults Training 1"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="portrait-video-card">
+                        <div class="video-label">Adults Training</div>
+                        <iframe src="https://www.youtube.com/embed/DX0Ly-9afdg" 
+                                title="Adults Training 2"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    
+                    <!-- More Training Sessions -->
+                    <div class="portrait-video-card">
+                        <div class="video-label">Training Session</div>
+                        <iframe src="https://www.youtube.com/embed/TMRl1Z4FSx0" 
+                                title="Training Session 1"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="portrait-video-card">
+                        <div class="video-label">Training Session</div>
+                        <iframe src="https://www.youtube.com/embed/FMzGFbR08YU" 
+                                title="Training Session 2"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="portrait-video-card">
+                        <div class="video-label">Training Session</div>
+                        <iframe src="https://www.youtube.com/embed/UAb0zWJYtBw" 
+                                title="Training Session 3"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="portrait-video-card">
+                        <div class="video-label">Training Session</div>
+                        <iframe src="https://www.youtube.com/embed/CE4Wb1fdGBc" 
+                                title="Training Session 4"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <!-- <section class="faqs-section" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about our training programs</p>
+
+            <div class="faq-container">
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">About Parkour</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What is parkour?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Parkour is a movement discipline that teaches people how to move efficiently through obstacles using skills like running, jumping, climbing, and balancing. At MMA, it is taught in a structured and controlled environment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What are the benefits of parkour?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Parkour helps improve strength, balance, coordination, agility, and body awareness. It also supports confidence, focus, problem-solving, and resilience, especially in children.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Is parkour suitable for all ages?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Parkour can be adapted for different ages and fitness levels. At MMA, classes are designed specifically for toddlers, kids, teens, and adults, with age-appropriate training and supervision.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Is parkour dangerous?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Like any physical activity, parkour involves movement and effort. However, when taught properly with supervision, structured progressions, and safety protocols, risks are significantly reduced. Safety is our top priority at MMA.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">About Rock Climbing</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What is rock climbing?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Rock climbing is a movement activity that involves climbing up a wall using strength, balance, and problem-solving. At MMA, it is taught on indoor climbing walls in a controlled and supervised environment.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What are the benefits of rock climbing?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Rock climbing helps improve full-body strength, coordination, grip strength, focus, and problem-solving skills. It also builds confidence as climbers learn to trust their movement and make decisions calmly.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Is rock climbing safe?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>When taught correctly, rock climbing is a safe activity. At MMA, all classes are conducted under supervision with safety equipment and controlled progressions. Indoor climbing sessions use crash mats and safety setups appropriate for each student's ability level.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do I need any prior experience to start rock climbing?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No prior experience is needed. Beginners are welcome, and classes start with basic techniques before progressing gradually.</p>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="faq-category">
+                    <h3 class="faq-category-title">About Calisthenics</h3>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What is calisthenics?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Calisthenics is a form of strength training that uses your own body weight instead of heavy gym equipment. Exercises include movements like push-ups, squats, hanging, and controlled holds, all focused on building strength and control.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What are the benefits of calisthenics?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Calisthenics helps improve overall strength, mobility and flexibility, balance and coordination, body control and posture. It is a practical and effective way to get stronger without relying on machines or weights.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Is calisthenics suitable for beginners?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Calisthenics at MMA is designed to be beginner-friendly. Exercises are adapted to individual ability, and students progress gradually based on comfort and strength. No prior experience is needed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can calisthenics help me build muscle?</span>
+                            <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. With consistent training and gradual progression, calisthenics can help build noticeable strength and muscle using body weight alone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="faq-cta">
+                <p>Have more questions?</p>
+                <a href="https://wa.me/919876543210" class="btn btn-primary" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 8px;">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" fill="currentColor"/>
+                    </svg>
+                    TALK TO US
+                </a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Start Your Movement Journey?</h2>
+                <p class="cta-description">Join hundreds of students across Mumbai who are discovering the power of movement. Whether you're looking for yourself or your child, we're here to help you get started.</p>
+                <div class="cta-buttons-large">
+                    <a href="./book-trial.html" class="btn btn-primary-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;">
+                            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        BOOK A TRIAL CLASS
+                    </a>
+                    <a href="#locations" class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px;">
+                            <path d="M17.657 16.657L13.414 20.9C12.2216 22.0924 10.2784 22.0924 9.08597 20.9L4.84297 16.657C1.21897 13.033 1.21897 7.21697 4.84297 3.59297C8.46697 -0.0310283 14.283 -0.0310283 17.907 3.59297C21.531 7.21697 21.531 13.033 17.657 16.657V16.657Z" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        FIND A LOCATION
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Levels Section -->
+    <!-- COMMENTED OUT - TO BE MOVED TO SEPARATE PAGE
+    <section class="levels">
+        <div class="container">
+            <h2 class="section-title">Level Progression System</h2>
+            <div class="levels-timeline">
+                
+                <div class="level-item animate-on-scroll">
+                    <div class="level-line red-line"></div>
+                    <div class="level-dot"></div>
+                    <div class="level-content left-content">
+                        <div class="level-badge red-badge">
+                            <span class="level-circle"></span>
+                            <h3>Red Level</h3>
+                        </div>
+                        <p class="level-stage">FOUNDATION</p>
+                        <ul class="level-features">
+                            <li>Basic vaults</li>
+                            <li>Safe landings</li>
+                            <li>10 precision jumps</li>
+                            <li>Roll techniques</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="level-item animate-on-scroll">
+                    <div class="level-line orange-line"></div>
+                    <div class="level-dot"></div>
+                    <div class="level-content right-content">
+                        <div class="level-badge orange-badge">
+                            <span class="level-circle"></span>
+                            <h3>Orange Level</h3>
+                        </div>
+                        <p class="level-stage">INTERMEDIATE</p>
+                        <ul class="level-features">
+                            <li>Kong vault</li>
+                            <li>Cat leap</li>
+                            <li>20 precision jumps</li>
+                            <li>Flow sequences</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="level-item animate-on-scroll">
+                    <div class="level-line yellow-line"></div>
+                    <div class="level-dot"></div>
+                    <div class="level-content left-content">
+                        <div class="level-badge yellow-badge">
+                            <span class="level-circle"></span>
+                            <h3>Yellow Level</h3>
+                        </div>
+                        <p class="level-stage">ADVANCED</p>
+                        <ul class="level-features">
+                            <li>Dash vault</li>
+                            <li>Wall run variations</li>
+                            <li>30 precision jumps</li>
+                            <li>Creative routing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="level-item animate-on-scroll">
+                    <div class="level-line green-line"></div>
+                    <div class="level-dot"></div>
+                    <div class="level-content right-content">
+                        <div class="level-badge green-badge">
+                            <span class="level-circle"></span>
+                            <h3>Green Level</h3>
+                        </div>
+                        <p class="level-stage">EXPERT</p>
+                        <ul class="level-features">
+                            <li>Advanced techniques</li>
+                            <li>Freestyle flow</li>
+                            <li>Teaching basics</li>
+                            <li>Risk assessment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="level-item animate-on-scroll">
+                    <div class="level-line blue-line"></div>
+                    <div class="level-dot"></div>
+                    <div class="level-content left-content">
+                        <div class="level-badge blue-badge">
+                            <span class="level-circle"></span>
+                            <h3>Blue Level</h3>
+                        </div>
+                        <p class="level-stage">MASTERY</p>
+                        <ul class="level-features">
+                            <li>Complex sequences</li>
+                            <li>Mentoring</li>
+                            <li>Competition level</li>
+                            <li>Innovation</li>
+                        </ul>
+                    </div>
+                </div>
+
+               
+                <div class="level-item animate-on-scroll">
+                    <div class="level-line purple-line"></div>
+                    <div class="level-dot"></div>
+                    <div class="level-content right-content">
+                        <div class="level-badge purple-badge">
+                            <span class="level-circle"></span>
+                            <h3>Purple Level</h3>
+                        </div>
+                        <p class="level-stage">ELITE</p>
+                        <ul class="level-features">
+                            <li>Professional level</li>
+                            <li>Advanced teaching</li>
+                            <li>Stunt work</li>
+                            <li>Competition success</li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="level-item animate-on-scroll">
+                    <div class="level-line black-line"></div>
+                    <div class="level-dot"></div>
+                    <div class="level-content left-content">
+                        <div class="level-badge black-badge">
+                            <span class="level-circle"></span>
+                            <h3>Black Level</h3>
+                        </div>
+                        <p class="level-stage">WORLD CLASS</p>
+                        <ul class="level-features">
+                            <li>International recognition</li>
+                            <li>Master instructor</li>
+                            <li>Innovator</li>
+                            <li>Ambassador</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="level-exams-info">
+                <h3 class="subsection-title">Level Exams</h3>
+                <p>Students progress through levels by demonstrating mastery in skill assessments. Exams are held quarterly and evaluate:</p>
+                <ul class="exam-criteria">
+                    <li>Technical proficiency (precision, control, form)</li>
+                    <li>Safety awareness and risk management</li>
+                    <li>Creativity and flow</li>
+                    <li>Consistency and mental focus</li>
+                </ul>
+                <p class="exam-example"><strong>Example:</strong> To pass Red Level, students must complete 10 consecutive precision jumps with proper form, demonstrating balance, focus, and landing control.</p>
+            </div>
+        </div>
+    </section>
+    END OF COMMENTED OUT LEVELS SECTION -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Logo and Description -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+                    </div>
+                    <p class="footer-description">Mumbai Movement Academy - Redefining fitness through movement since 2019.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@MumbaiMovementAcademy" target="_blank" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-column" id="links">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="./book-trial.html">Contact</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://wa.me/919876543210" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Locations -->
+                <div class="footer-column" id="locations">
+                    <h4>OUR LOCATIONS</h4>
+                    <ul>
+                        <li><a href="#andheri">Andheri</a></li>
+                        <li><a href="#bandra">Bandra</a></li>
+                        <li><a href="#powai">Powai</a></li>
+                        <li><a href="#juhu">Juhu</a></li>
+                        <li><a href="#breach-candy">Breach Candy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-column" id="contact">
+                    <h4>CONTACT</h4>
+                    <ul class="contact-info">
+                        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li><a href="mailto:info@mumbaima.com">info@mumbaima.com</a></li>
+                        <li class="hours">Mon-Fri: 10 AM - 9 PM</li>
+                        <li class="hours">Sat: 9 AM - 7 PM</li>
+                        <li class="hours">Sun: 10 AM - 5 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mumbai Movement Academy. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
