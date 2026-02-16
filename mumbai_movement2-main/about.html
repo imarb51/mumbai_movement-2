@@ -41,7 +41,19 @@
 
     <!-- Hero Section -->
     <section class="hero about-hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('img/main_banner.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-5.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-11.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-18.jpg');"></div>
+        </div>
         <div class="hero-overlay"></div>
+        <button class="hero-arrow hero-arrow-left" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="hero-arrow hero-arrow-right" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <div class="hero-content">
             <h1 class="hero-title animate-fade-in">About MMA</h1>
             <p class="hero-subtitle animate-fade-in-delay">Where passion for movement meets excellence in training</p>
@@ -52,6 +64,30 @@
             </div>
         </div>
     </section>
+
+    <!-- Hero Scrolling Banner -->
+    <div class="hero-scroll-banner">
+        <div class="hero-scroll-track">
+            <div class="hero-scroll-content">
+                <span class="scroll-item"><span class="scroll-dot"></span> Age-appropriate classes</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Trained and experienced coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe indoor setups</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Beginner-friendly approach</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5+ Years of Experience</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 1000+ Students Trained</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5 Locations across Mumbai</span>
+            </div>
+            <div class="hero-scroll-content" aria-hidden="true">
+                <span class="scroll-item"><span class="scroll-dot"></span> Age-appropriate classes</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Trained and experienced coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe indoor setups</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Beginner-friendly approach</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5+ Years of Experience</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 1000+ Students Trained</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5 Locations across Mumbai</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Philosophy Section -->
     <section class="philosophy-section">
@@ -116,138 +152,269 @@
             <h2 class="section-title">Meet Our Founders</h2>
             <p class="section-subtitle">The visionaries behind Mumbai Movement Academy</p>
 
-            <!-- Founder 1 -->
-            <div class="founder-detail animate-on-scroll">
-                <div class="founder-detail-image">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Dr. Rishi Prasad">
-                </div>
-                <div class="founder-detail-content">
-                    <h3 class="founder-detail-name">Dr. Rishi Prasad</h3>
-                    <p class="founder-detail-role">Co-Founder & Head Coach</p>
-                    <div class="founder-detail-text">
-                        <p>Dr. Rishi Prasad is a certified sports physiotherapist with over 15 years of experience in movement science. He pioneered the integration of parkour with rehabilitation techniques, creating a unique training methodology that emphasizes injury prevention and functional fitness.</p>
-                        <p>Under his guidance, Mumbai Movement Academy has become a leading institution for movement education in India. His philosophy centers on making movement accessible to everyone, regardless of age or fitness level.</p>
-                        <p><strong>Certifications:</strong> Sports Physiotherapy, Parkour Coaching Level 3, Movement & Mobility Specialist</p>
+            <div class="founders-row">
+                <!-- Founder 1 -->
+                <div class="founder-card animate-on-scroll" data-founder="rishi">
+                    <div class="founder-card-image">
+                        <img src="img/DrRishiPrasad.jpg" alt="Dr. Rishi Prasad">
                     </div>
+                    <h3 class="founder-card-name">Dr. Rishi Prasad</h3>
+                    <p class="founder-card-role">Co-Founder & Head Coach</p>
                 </div>
-            </div>
 
-            <!-- Founder 2 -->
-            <div class="founder-detail alternate animate-on-scroll">
-                <div class="founder-detail-content">
-                    <h3 class="founder-detail-name">Cyrus Khan</h3>
-                    <p class="founder-detail-role">Co-Founder & Movement Director</p>
-                    <div class="founder-detail-text">
-                        <p>Cyrus Khan is one of India's first professional parkour athletes and has represented the country at international competitions. With expertise in freerunning, calisthenics, and stunt coordination, he brings a creative and dynamic approach to movement training.</p>
-                        <p>He has worked with major brands like Red Bull and Nike, and has coached elite performers including Bollywood stunt teams and Indian Army Special Forces. His innovative training methods blend athleticism with artistry.</p>
-                        <p><strong>Achievements:</strong> International Parkour Champion, Red Bull Athlete, Bollywood Stunt Coordinator</p>
+                <!-- Founder 2 -->
+                <div class="founder-card animate-on-scroll" data-founder="cyrus">
+                    <div class="founder-card-image">
+                        <img src="img/CyrusKhan.jpg" alt="Cyrus Khan">
                     </div>
+                    <h3 class="founder-card-name">Cyrus Khan</h3>
+                    <p class="founder-card-role">Co-Founder & Movement Director</p>
                 </div>
-                <div class="founder-detail-image">
-                    <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=600&q=80" alt="Cyrus Khan">
-                </div>
-            </div>
 
-            <!-- Founder 3 -->
-            <div class="founder-detail animate-on-scroll">
-                <div class="founder-detail-image">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Krishna Mehta">
-                </div>
-                <div class="founder-detail-content">
-                    <h3 class="founder-detail-name">Krishna Mehta</h3>
-                    <p class="founder-detail-role">Co-Founder & Business Development</p>
-                    <div class="founder-detail-text">
-                        <p>Krishna Mehta brings her MBA and corporate strategy background to scale Mumbai Movement Academy from a single studio to five locations across Mumbai. Her vision extends beyond just training facilities — she's building a movement culture.</p>
-                        <p>She has established partnerships with schools, universities, and corporate organizations, making movement training accessible to thousands of individuals across different demographics. Her leadership has been instrumental in MMA's growth and community impact.</p>
-                        <p><strong>Expertise:</strong> Business Strategy, Partnership Development, Community Building</p>
+                <!-- Founder 3 -->
+                <div class="founder-card animate-on-scroll" data-founder="krishna">
+                    <div class="founder-card-image founder-image-3">
+                        <img src="img/KrishnaMehta.jpg" alt="Krishna Mehta">
                     </div>
+                    <h3 class="founder-card-name">Krishna Mehta</h3>
+                    <p class="founder-card-role">Co-Founder & Business Development</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Founder Popup Modal -->
+    <div class="founder-modal-overlay" id="founderModal">
+        <div class="founder-modal">
+            <button class="founder-modal-close" aria-label="Close">&times;</button>
+            <div class="founder-modal-inner">
+                <div class="founder-modal-image">
+                    <img id="founderModalImg" src="" alt="">
+                </div>
+                <div class="founder-modal-content">
+                    <h3 class="founder-modal-name" id="founderModalName"></h3>
+                    <p class="founder-modal-role" id="founderModalRole"></p>
+                    <div class="founder-modal-text" id="founderModalText"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Coaches Section -->
     <section class="coaches-section">
         <div class="container">
-            <h2 class="section-title">Our Coaches</h2>
-            <p class="section-subtitle">Expert instructors dedicated to your growth</p>
+            <h2 class="section-title">Meet Our Coaches</h2>
+            <p class="section-subtitle">At Mumbai Movement Academy, our coaches are at the heart of everything we do.</p>
 
             <div class="coaches-intro">
-                <p class="content-text">Every coach at MMA is certified, experienced, and passionate about movement education. Our team brings diverse expertise from parkour, climbing, calisthenics, martial arts, and sports science.</p>
+                <p class="content-text">Each class is led by trained professionals who prioritise safety, progression, and supportive learning. Our team includes senior coaches, specialised instructors, and junior-level trainers who work together to maintain structured and consistent training standards.</p>
             </div>
 
+            <!-- Senior Coaches -->
+            <h3 class="coaches-tier-title">Senior Coaches</h3>
             <div class="coaches-grid">
                 <div class="coach-card animate-on-scroll">
                     <div class="coach-image">
-                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=400&q=80" alt="Coach">
+                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=400&q=80" alt="Manmohan Verma">
                     </div>
                     <div class="coach-info">
-                        <h3 class="coach-name">Rohan Sharma</h3>
-                        <p class="coach-specialty">Parkour & Kids Programs</p>
-                        <p class="coach-cert">Level 2 Parkour Coach</p>
+                        <span class="coach-tier-badge coach-tier-senior">Senior</span>
+                        <h3 class="coach-name">Manmohan Verma</h3>
+                        <p class="coach-specialty">Senior Parkour Coach</p>
+                        <p class="coach-cert">Provides leadership in curriculum delivery, technical development, and training standards across centres.</p>
                     </div>
                 </div>
 
                 <div class="coach-card animate-on-scroll">
                     <div class="coach-image">
-                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=400&q=80" alt="Coach">
+                        <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=400&q=80" alt="Nikhil Shetye">
                     </div>
                     <div class="coach-info">
-                        <h3 class="coach-name">Priya Nair</h3>
-                        <p class="coach-specialty">Rock Climbing & Youth Development</p>
-                        <p class="coach-cert">Climbing Instructor Certified</p>
+                        <span class="coach-tier-badge coach-tier-senior">Acting Senior</span>
+                        <h3 class="coach-name">Nikhil Shetye</h3>
+                        <p class="coach-specialty">Acting Senior Parkour Coach</p>
+                        <p class="coach-cert">Supports program execution, mentor training, and ensures consistency in coaching methodology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- J2 Coaches -->
+            <h3 class="coaches-tier-title">J2 Coaches</h3>
+            <div class="coaches-grid">
+                <div class="coach-card animate-on-scroll">
+                    <div class="coach-image">
+                        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?auto=format&fit=crop&w=400&q=80" alt="Ashith Tonse">
+                    </div>
+                    <div class="coach-info">
+                        <span class="coach-tier-badge coach-tier-j2">J2</span>
+                        <h3 class="coach-name">Ashith Tonse</h3>
+                        <p class="coach-specialty">Parkour Coach</p>
+                        <p class="coach-cert">Leads regular classes and assists in skill progression and level assessments.</p>
                     </div>
                 </div>
 
                 <div class="coach-card animate-on-scroll">
                     <div class="coach-image">
-                        <img src="https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?auto=format&fit=crop&w=400&q=80" alt="Coach">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Hardik Negi">
                     </div>
                     <div class="coach-info">
-                        <h3 class="coach-name">Arjun Patel</h3>
-                        <p class="coach-specialty">Calisthenics & Strength Training</p>
-                        <p class="coach-cert">Calisthenics Master Trainer</p>
+                        <span class="coach-tier-badge coach-tier-j2">J2</span>
+                        <h3 class="coach-name">Hardik Negi</h3>
+                        <p class="coach-specialty">Parkour Coach</p>
+                        <p class="coach-cert">Leads regular classes and assists in skill progression and level assessments.</p>
                     </div>
                 </div>
 
                 <div class="coach-card animate-on-scroll">
                     <div class="coach-image">
-                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80" alt="Coach">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="Ram Chhetri">
                     </div>
                     <div class="coach-info">
-                        <h3 class="coach-name">Ananya Das</h3>
-                        <p class="coach-specialty">Movement & Mobility</p>
-                        <p class="coach-cert">Yoga & Mobility Specialist</p>
+                        <span class="coach-tier-badge coach-tier-j2">J2</span>
+                        <h3 class="coach-name">Ram Chhetri</h3>
+                        <p class="coach-specialty">Parkour Coach</p>
+                        <p class="coach-cert">Leads regular classes and assists in skill progression and level assessments.</p>
                     </div>
                 </div>
 
                 <div class="coach-card animate-on-scroll">
                     <div class="coach-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Coach">
+                        <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&w=400&q=80" alt="Kartik Aayre">
                     </div>
                     <div class="coach-info">
-                        <h3 class="coach-name">Vikram Singh</h3>
-                        <p class="coach-specialty">Advanced Parkour & Freerunning</p>
-                        <p class="coach-cert">International Parkour Athlete</p>
+                        <span class="coach-tier-badge coach-tier-j2">J2</span>
+                        <h3 class="coach-name">Kartik Aayre</h3>
+                        <p class="coach-specialty">Rock Climbing Coach</p>
+                        <p class="coach-cert">Leads indoor climbing sessions, focusing on technique, safety, and structured progression.</p>
                     </div>
                 </div>
+            </div>
 
-                <div class="coach-card animate-on-scroll">
-                    <div class="coach-image">
-                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Coach">
-                    </div>
+            <!-- J1 Coaches -->
+            <h3 class="coaches-tier-title">J1 Coaches <span class="tier-subtitle">(Junior Coaches)</span></h3>
+            <div class="coaches-grid coaches-grid-small">
+                <div class="coach-card coach-card-compact animate-on-scroll">
                     <div class="coach-info">
-                        <h3 class="coach-name">Meera Iyer</h3>
-                        <p class="coach-specialty">Kids & Toddler Programs</p>
-                        <p class="coach-cert">Child Development Specialist</p>
+                        <span class="coach-tier-badge coach-tier-j1">J1</span>
+                        <h3 class="coach-name">Harsh Poojary</h3>
+                    </div>
+                </div>
+                <div class="coach-card coach-card-compact animate-on-scroll">
+                    <div class="coach-info">
+                        <span class="coach-tier-badge coach-tier-j1">J1</span>
+                        <h3 class="coach-name">Omkar Gadhigaonkar</h3>
+                    </div>
+                </div>
+                <div class="coach-card coach-card-compact animate-on-scroll">
+                    <div class="coach-info">
+                        <span class="coach-tier-badge coach-tier-j1">J1</span>
+                        <h3 class="coach-name">Kedar Rawool</h3>
+                    </div>
+                </div>
+                <div class="coach-card coach-card-compact animate-on-scroll">
+                    <div class="coach-info">
+                        <span class="coach-tier-badge coach-tier-j1">J1</span>
+                        <h3 class="coach-name">Dipanshu Chatterjee</h3>
+                    </div>
+                </div>
+                <div class="coach-card coach-card-compact animate-on-scroll">
+                    <div class="coach-info">
+                        <span class="coach-tier-badge coach-tier-j1">J1</span>
+                        <h3 class="coach-name">Pratham Wade</h3>
+                    </div>
+                </div>
+                <div class="coach-card coach-card-compact animate-on-scroll">
+                    <div class="coach-info">
+                        <span class="coach-tier-badge coach-tier-j1">J1</span>
+                        <h3 class="coach-name">Jason Gordon</h3>
+                    </div>
+                </div>
+                <div class="coach-card coach-card-compact animate-on-scroll">
+                    <div class="coach-info">
+                        <span class="coach-tier-badge coach-tier-j1">J1</span>
+                        <h3 class="coach-name">Yash Makode</h3>
                     </div>
                 </div>
             </div>
 
             <div class="coaches-cta">
-                <h3 class="subsection-title">Certifications & Experience</h3>
-                <p class="content-text">All our coaches hold relevant certifications and undergo continuous training to stay updated with the latest movement methodologies. Many have competed at national and international levels, bringing real-world experience to every class.</p>
+                <p class="content-text">J1 coaches support senior trainers during classes, ensuring students receive individual attention and guidance.</p>
                 <p class="content-text">Safety is paramount — every coach is trained in first aid, injury prevention, and age-appropriate teaching methods.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers & Internships Section -->
+    <section class="careers-section">
+        <div class="container">
+            <h2 class="section-title">Careers & Internships</h2>
+            <p class="section-subtitle">Join the MMA Team</p>
+
+            <div class="careers-layout">
+                <div class="careers-left">
+                    <div class="careers-intro">
+                        <p class="content-text" style="color: rgba(255,255,255,0.5); font-size: 0.95rem;">We are always looking for passionate individuals who believe in structured movement, disciplined training, and community building.</p>
+                    </div>
+
+                    <ul class="careers-list">
+                        <li>Parkour Coach</li>
+                        <li>Climbing Instructor</li>
+                        <li>Movement Trainer</li>
+                        <li>Intern / Assistant Coach</li>
+                    </ul>
+
+                    <div class="careers-what-we-look-for">
+                        <h3 class="subsection-title">What We Look For</h3>
+                        <ul class="careers-list">
+                            <li>Strong movement foundation</li>
+                            <li>Commitment to safety</li>
+                            <li>Willingness to learn</li>
+                            <li>Works well with all ages</li>
+                        </ul>
+                        <p class="content-text" style="color: rgba(255,255,255,0.35); font-size: 0.85rem;">Prior experience helps, but dedication and willingness to train matter just as much.</p>
+                    </div>
+                </div>
+
+                <div class="careers-right">
+                    <div class="careers-form-container">
+                        <h3 class="subsection-title">Interested?</h3>
+                        <p class="content-text">Leave your details and our team will get in touch.</p>
+                        
+                        <form class="careers-form" id="careersForm">
+                            <div class="careers-form-grid">
+                                <div class="form-group">
+                                    <label for="careerName">Full Name</label>
+                                    <input type="text" id="careerName" name="name" required placeholder="Your name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="careerPhone">Phone</label>
+                                    <input type="tel" id="careerPhone" name="phone" required placeholder="10-digit number" maxlength="10">
+                                </div>
+                                <div class="form-group">
+                                    <label for="careerEmail">Email</label>
+                                    <input type="email" id="careerEmail" name="email" required placeholder="you@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="careerInterest">Interest</label>
+                                    <select id="careerInterest" name="interest" required>
+                                        <option value="">Select area</option>
+                                        <option value="parkour">Parkour</option>
+                                        <option value="climbing">Climbing</option>
+                                        <option value="calisthenics">Calisthenics</option>
+                                        <option value="internship">Internship</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-full">
+                                <label for="careerMessage">Message (optional)</label>
+                                <textarea id="careerMessage" name="message" rows="3" placeholder="A few words about your experience..."></textarea>
+                            </div>
+                            <button type="submit" class="careers-submit">Submit Interest</button>
+                            <p class="careers-form-note">We review applications periodically and will contact shortlisted candidates.</p>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -337,7 +504,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Mumbai Movement Academy. All rights reserved.</p>
+                <p>&copy; 2026 Mumbai Movement Academy. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#privacy">Privacy Policy</a>
                     <a href="#terms">Terms of Service</a>

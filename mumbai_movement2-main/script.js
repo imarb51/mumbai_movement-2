@@ -521,4 +521,274 @@ if (document.readyState === 'loading') {
 })();
 
 
+/* ========================================
+   OFFER STRIP — Dismiss & localStorage
+   ======================================== */
+(function () {
+    const strip = document.getElementById('offerStrip');
+    if (!strip) return;
 
+    // Check localStorage to see if already dismissed
+    if (sessionStorage.getItem('offerStripDismissed') === 'true') {
+        strip.style.display = 'none';
+    } else {
+        strip.style.display = 'flex';
+        document.body.classList.add('offer-strip-visible');
+    }
+
+    const closeBtn = strip.querySelector('.offer-strip-close');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+            strip.style.display = 'none';
+            document.body.classList.remove('offer-strip-visible');
+            sessionStorage.setItem('offerStripDismissed', 'true');
+        });
+    }
+})();
+
+
+/* ========================================
+   HERO IMAGE SLIDER — Auto-play & Arrows
+   ======================================== */
+(function () {
+    document.querySelectorAll('.hero').forEach(function (hero) {
+        var slides = hero.querySelectorAll('.hero-slide');
+        var leftBtn = hero.querySelector('.hero-arrow-left');
+        var rightBtn = hero.querySelector('.hero-arrow-right');
+        if (slides.length < 2) return;
+
+        var current = 0;
+        var total = slides.length;
+        var autoInterval = 5000;
+        var timer;
+
+        function goTo(index) {
+            slides[current].classList.remove('active');
+            current = (index + total) % total;
+            slides[current].classList.add('active');
+        }
+
+        function next() {
+            goTo(current + 1);
+        }
+
+        function prev() {
+            goTo(current - 1);
+        }
+
+        function startAuto() {
+            clearInterval(timer);
+            timer = setInterval(next, autoInterval);
+        }
+
+        if (rightBtn) {
+            rightBtn.addEventListener('click', function () {
+                next();
+                startAuto();
+            });
+        }
+
+        if (leftBtn) {
+            leftBtn.addEventListener('click', function () {
+                prev();
+                startAuto();
+            });
+        }
+
+        // Start auto-play
+        startAuto();
+    });
+})();
+
+
+/* ========================================
+   FOUNDER CARD — Popup Modal
+   ======================================== */
+(function () {
+    var founderData = {
+        rishi: {
+            name: 'Dr. Rishi Prasad',
+            role: 'Co-Founder & Head Coach',
+            img: 'img/DrRishiPrasad.jpg',
+            needsRotation: true,
+            text: '<p>Dr. Rishi Prasad is a certified sports physiotherapist with over 15 years of experience in movement science. He pioneered the integration of parkour with rehabilitation techniques, creating a unique training methodology that emphasizes injury prevention and functional fitness.</p><p>Under his guidance, Mumbai Movement Academy has become a leading institution for movement education in India. His philosophy centers on making movement accessible to everyone, regardless of age or fitness level.</p><p><strong>Certifications:</strong> Sports Physiotherapy, Parkour Coaching Level 3, Movement & Mobility Specialist</p>'
+        },
+        cyrus: {
+            name: 'Cyrus Khan',
+            role: 'Co-Founder & Movement Director',
+            img: 'img/CyrusKhan.jpg',
+            needsRotation: true,
+            text: '<p>Cyrus Khan is one of India\'s first professional parkour athletes and has represented the country at international competitions. With expertise in freerunning, calisthenics, and stunt coordination, he brings a creative and dynamic approach to movement training.</p><p>He has worked with major brands like Red Bull and Nike, and has coached elite performers including Bollywood stunt teams and Indian Army Special Forces. His innovative training methods blend athleticism with artistry.</p><p><strong>Achievements:</strong> International Parkour Champion, Red Bull Athlete, Bollywood Stunt Coordinator</p>'
+        },
+        krishna: {
+            name: 'Krishna Mehta',
+            role: 'Co-Founder & Business Development',
+            img: 'img/KrishnaMehta.jpg',
+            needsRotation: false,
+            text: '<p>Krishna Mehta brings her MBA and corporate strategy background to scale Mumbai Movement Academy from a single studio to five locations across Mumbai. Her vision extends beyond just training facilities — she\'s building a movement culture.</p><p>She has established partnerships with schools, universities, and corporate organizations, making movement training accessible to thousands of individuals across different demographics. Her leadership has been instrumental in MMA\'s growth and community impact.</p><p><strong>Expertise:</strong> Business Strategy, Partnership Development, Community Building</p>'
+        }
+    };
+
+    var modal = document.getElementById('founderModal');
+    if (!modal) return;
+
+    var modalImg = document.getElementById('founderModalImg');
+    var modalName = document.getElementById('founderModalName');
+    var modalRole = document.getElementById('founderModalRole');
+    var modalText = document.getElementById('founderModalText');
+    var closeBtn = modal.querySelector('.founder-modal-close');
+
+    function openModal(key) {
+        var data = founderData[key];
+        if (!data) return;
+        modalImg.src = data.img;
+        modalImg.alt = data.name;
+        modalName.textContent = data.name;
+        modalRole.textContent = data.role;
+        modalText.innerHTML = data.text;
+        // Toggle rotation class for modal image
+        var imgContainer = modalImg.closest('.founder-modal-image');
+        if (imgContainer) {
+            if (data.needsRotation) {
+                imgContainer.classList.add('needs-rotation');
+            } else {
+                imgContainer.classList.remove('needs-rotation');
+            }
+        }
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.founder-card').forEach(function (card) {
+        card.addEventListener('click', function () {
+            openModal(this.getAttribute('data-founder'));
+        });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) closeModal();
+    });
+})();
+
+
+/* ========================================
+   LEAD CAPTURE POPUP — Trigger & Close
+   ======================================== */
+(function () {
+    const overlay = document.getElementById('leadPopup');
+    if (!overlay) return;
+
+    const closeBtn = overlay.querySelector('.lead-popup-close');
+    const form = document.getElementById('leadPopupForm');
+    let popupShown = false;
+
+    function showPopup() {
+        if (popupShown) return;
+        popupShown = true;
+        overlay.classList.add('active');
+    }
+
+    function hidePopup() {
+        overlay.classList.remove('active');
+    }
+
+    // Show popup on page load (small delay for smooth UX)
+    setTimeout(showPopup, 1500);
+
+    // Close button
+    if (closeBtn) {
+        closeBtn.addEventListener('click', hidePopup);
+    }
+
+    // Close on overlay click
+    overlay.addEventListener('click', function (e) {
+        if (e.target === overlay) hidePopup();
+    });
+
+    // Close on Escape
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') hidePopup();
+    });
+
+    // Form submission
+    if (form) {
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const name = data.get('name') || form.querySelector('input[placeholder*="Name"]').value;
+
+            // Build WhatsApp message
+            let msg = 'Hi! I\'d like to claim the 20% new student offer.\n';
+            msg += 'Name: ' + (name || 'Not provided') + '\n';
+
+            const phone = form.querySelector('input[type="tel"]');
+            if (phone && phone.value) msg += 'Phone: ' + phone.value + '\n';
+
+            const email = form.querySelector('input[type="email"]');
+            if (email && email.value) msg += 'Email: ' + email.value + '\n';
+
+            const age = form.querySelector('select');
+            if (age && age.value) msg += 'Age Group: ' + age.value + '\n';
+
+            const location = form.querySelectorAll('select')[1] || form.querySelector('select[name="location"]');
+            if (location && location.value) msg += 'Location: ' + location.value + '\n';
+
+            const waLink = 'https://wa.me/919876543210?text=' + encodeURIComponent(msg);
+            window.open(waLink, '_blank');
+            hidePopup();
+            form.reset();
+        });
+    }
+})();
+
+
+/* ========================================
+   CAREERS FORM HANDLER
+   ======================================== */
+(function () {
+    const form = document.getElementById('careersForm');
+    if (!form) return;
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const name = form.querySelector('input[placeholder*="Full Name"]');
+        const phone = form.querySelector('input[type="tel"]');
+        const email = form.querySelector('input[type="email"]');
+        const interest = form.querySelector('select');
+        const message = form.querySelector('textarea');
+
+        let msg = 'Hi, I\'m interested in joining the Mumbai Movement Academy team.\n\n';
+        if (name && name.value) msg += 'Name: ' + name.value + '\n';
+        if (phone && phone.value) msg += 'Phone: ' + phone.value + '\n';
+        if (email && email.value) msg += 'Email: ' + email.value + '\n';
+        if (interest && interest.value) msg += 'Area of Interest: ' + interest.value + '\n';
+        if (message && message.value) msg += 'Message: ' + message.value + '\n';
+
+        const waLink = 'https://wa.me/919876543210?text=' + encodeURIComponent(msg);
+        window.open(waLink, '_blank');
+        form.reset();
+    });
+})();
+
+
+/* ========================================
+   PHONE NUMBER FORMATTING
+   ======================================== */
+document.querySelectorAll('input[type="tel"]').forEach(function (input) {
+    input.addEventListener('input', function () {
+        // Remove non-digits
+        this.value = this.value.replace(/[^\d+\-\s()]/g, '');
+    });
+});

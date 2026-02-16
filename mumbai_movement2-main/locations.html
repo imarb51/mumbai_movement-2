@@ -41,7 +41,19 @@
 
     <!-- Hero Section -->
     <section class="hero locations-hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('img/main_banner.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-5.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-11.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-18.jpg');"></div>
+        </div>
         <div class="hero-overlay"></div>
+        <button class="hero-arrow hero-arrow-left" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="hero-arrow hero-arrow-right" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <div class="hero-content">
             <h1 class="hero-title animate-fade-in">OUR LOCATIONS</h1>
             <p class="hero-subtitle animate-fade-in-delay">5 state-of-the-art facilities across Mumbai, designed for safe and structured movement training</p>
@@ -52,6 +64,30 @@
             </div>
         </div>
     </section>
+
+    <!-- Hero Scrolling Banner -->
+    <div class="hero-scroll-banner">
+        <div class="hero-scroll-track">
+            <div class="hero-scroll-content">
+                <span class="scroll-item"><span class="scroll-dot"></span> Age-appropriate classes</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Trained and experienced coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe indoor setups</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Beginner-friendly approach</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5+ Years of Experience</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 1000+ Students Trained</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5 Locations across Mumbai</span>
+            </div>
+            <div class="hero-scroll-content" aria-hidden="true">
+                <span class="scroll-item"><span class="scroll-dot"></span> Age-appropriate classes</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Trained and experienced coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe indoor setups</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Beginner-friendly approach</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5+ Years of Experience</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 1000+ Students Trained</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5 Locations across Mumbai</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Map Section -->
     <section class="map-section">
@@ -205,6 +241,69 @@
         </div>
     </section>
 
+    <!-- Fees & Offers Section -->
+    <section class="fees-offers-section" id="fees">
+        <div class="container">
+            <h2 class="section-title">Fees & Offers</h2>
+            <p class="section-subtitle">Clear Pricing. No Pressure.</p>
+            <p class="content-text" style="text-align: center; max-width: 620px; margin: 0.5rem auto 0; font-size: 0.88rem; color: rgba(255,255,255,0.4); line-height: 1.7;">We believe everyone should understand how things work before committing. Here's everything you need to know about fees, offers, and policies.</p>
+
+            <div class="fees-grid">
+                <!-- How Pricing Works -->
+                <div class="fees-card animate-on-scroll">
+                    <div class="fees-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" width="40" height="40"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.94s4.18 1.36 4.18 3.85c0 1.89-1.44 2.96-3.12 3.19z" fill="#4E89B2"/></svg>
+                    </div>
+                    <h3 class="fees-card-title">How Our Pricing Works</h3>
+                    <p class="fees-card-text">Our fees vary depending on location, age group, and program type. This allows us to maintain small class sizes and proper supervision.</p>
+                    <p class="fees-card-text">Instead of long price lists, we help you choose what fits best.</p>
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'd%20like%20to%20know%20about%20fees%20and%20pricing." class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Talk to Us on WhatsApp</a>
+                </div>
+
+                <!-- First-Time Offer -->
+                <div class="fees-card fees-card-highlight animate-on-scroll">
+                    <div class="fees-offer-badge">NEW STUDENT OFFER</div>
+                    <h3 class="fees-card-title">Get 20% Off Your First Membership*</h3>
+                    <p class="fees-card-text">It's our way of helping you experience structured training without hesitation.</p>
+                    <p class="fees-card-disclaimer">*Valid for first-time students enrolling in a membership plan. Does not apply to drop-ins or trial classes.</p>
+                    <div class="fees-card-buttons">
+                        <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20the%2020%25%20off%20first%20membership%20offer." class="btn btn-primary" target="_blank">Talk to Us on WhatsApp</a>
+                        <a href="./book-trial.html" class="btn btn-outline">Book a Trial Class</a>
+                    </div>
+                </div>
+
+                <!-- Family Discount -->
+                <div class="fees-card animate-on-scroll">
+                    <div class="fees-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" width="40" height="40"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="#4E89B2"/></svg>
+                    </div>
+                    <h3 class="fees-card-title">Family Discount</h3>
+                    <p class="fees-card-text">Training Together? Enjoy <strong>10% Off</strong> for Family Members.</p>
+                    <p class="fees-card-text">We encourage families to move together. If more than one family member enrols, you receive a 10% discount on memberships.</p>
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'd%20like%20to%20know%20about%20the%20family%20discount." class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Talk to Us About Family Discounts</a>
+                </div>
+
+                <!-- Safety & Waiver -->
+                <div class="fees-card animate-on-scroll">
+                    <div class="fees-card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" width="40" height="40"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" fill="#4E89B2"/></svg>
+                    </div>
+                    <h3 class="fees-card-title">Safety & Waiver Policy</h3>
+                    <p class="fees-card-text">All students are required to complete a standard participation waiver before beginning classes. This ensures:</p>
+                    <ul class="fees-list">
+                        <li>Clear understanding of how classes work</li>
+                        <li>Awareness of physical activity expectations</li>
+                        <li>A shared commitment to safety</li>
+                    </ul>
+                    <p class="fees-card-text">Our training is supervised, progressive, and designed to minimise risk.</p>
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'd%20like%20to%20understand%20the%20safety%20and%20waiver%20policy." class="btn btn-primary" target="_blank" style="margin-top: 1rem;">Talk to Us About Safety & Policies</a>
+                </div>
+            </div>
+
+            <p class="fees-footer-note">No hidden charges. No pressure. Just structured movement training designed to help you grow safely and consistently.</p>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section class="final-cta">
         <div class="container">
@@ -289,7 +388,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Mumbai Movement Academy. All rights reserved.</p>
+                <p>&copy; 2026 Mumbai Movement Academy. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#privacy">Privacy Policy</a>
                     <a href="#terms">Terms of Service</a>

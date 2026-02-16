@@ -10,6 +10,64 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Offer Strip -->
+    <div class="offer-strip" id="offerStrip">
+        <div class="offer-strip-content">
+            <p>New Students: <strong>Get 20% Off Your First Membership.</strong> <a href="https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20the%2020%25%20off%20first%20membership%20offer." target="_blank">Talk to Us to Know More</a></p>
+            <button class="offer-strip-close" id="offerStripClose" aria-label="Close offer">&times;</button>
+        </div>
+    </div>
+
+    <!-- Lead Capture Popup -->
+    <div class="lead-popup-overlay" id="leadPopup">
+        <div class="lead-popup">
+            <button class="lead-popup-close" id="leadPopupClose">&times;</button>
+            <div class="lead-popup-header">
+                <h2>Get 20% Off Your First Membership</h2>
+                <p>New to Mumbai Movement Academy? Leave your details and we'll share how the offer works for your preferred location.</p>
+            </div>
+            <form class="lead-popup-form" id="leadPopupForm">
+                <div class="lead-form-group">
+                    <label for="leadName">Name *</label>
+                    <input type="text" id="leadName" name="name" required placeholder="Your full name">
+                </div>
+                <div class="lead-form-group">
+                    <label for="leadAge">Age (optional)</label>
+                    <select id="leadAge" name="age">
+                        <option value="">Select age group</option>
+                        <option value="2-4">2–4 years (Toddler)</option>
+                        <option value="4-9">4–9 years (Kids)</option>
+                        <option value="10-14">10–14 years (Teens)</option>
+                        <option value="15-25">15–25 years</option>
+                        <option value="25-40">25–40 years</option>
+                        <option value="40+">40+ years</option>
+                    </select>
+                </div>
+                <div class="lead-form-group">
+                    <label for="leadLocation">Location Preference *</label>
+                    <select id="leadLocation" name="location" required>
+                        <option value="">Select location</option>
+                        <option value="andheri">Andheri West</option>
+                        <option value="bandra">Bandra West</option>
+                        <option value="powai">Powai</option>
+                        <option value="juhu">Juhu</option>
+                        <option value="breach-candy">Breach Candy</option>
+                    </select>
+                </div>
+                <div class="lead-form-group">
+                    <label for="leadPhone">Phone Number *</label>
+                    <input type="tel" id="leadPhone" name="phone" required placeholder="10-digit mobile number" maxlength="10">
+                </div>
+                <div class="lead-form-group lead-form-group-full">
+                    <label for="leadEmail">Email (optional)</label>
+                    <input type="email" id="leadEmail" name="email" placeholder="your@email.com">
+                </div>
+                <button type="submit" class="lead-popup-submit">Get Offer Details</button>
+                <p class="lead-popup-disclaimer">We'll only contact you regarding classes and offers. No spam.</p>
+            </form>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -41,7 +99,19 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('img/main_banner.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-5.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-11.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-18.jpg');"></div>
+        </div>
         <div class="hero-overlay"></div>
+        <button class="hero-arrow hero-arrow-left" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="hero-arrow hero-arrow-right" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <div class="hero-content">
             <h1 class="hero-title animate-fade-in">MOVEMENT TRAINING THAT HELPS CHILDREN GROW STRONGER, SAFER, AND MORE CONFIDENT.</h1>
             <div class="hero-bottom animate-fade-in-delay">
@@ -65,6 +135,30 @@
             </div>
         </div>
     </section>
+
+    <!-- Hero Scrolling Banner -->
+    <div class="hero-scroll-banner">
+        <div class="hero-scroll-track">
+            <div class="hero-scroll-content">
+                <span class="scroll-item"><span class="scroll-dot"></span> Age-appropriate classes</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Trained and experienced coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe indoor setups</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Beginner-friendly approach</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5+ Years of Experience</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 1000+ Students Trained</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5 Locations across Mumbai</span>
+            </div>
+            <div class="hero-scroll-content" aria-hidden="true">
+                <span class="scroll-item"><span class="scroll-dot"></span> Age-appropriate classes</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Trained and experienced coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe indoor setups</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Beginner-friendly approach</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5+ Years of Experience</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 1000+ Students Trained</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5 Locations across Mumbai</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Who Is This For Section -->
     <section class="who-is-this-for" id="who">
@@ -328,12 +422,12 @@
                 </div>
             </div>
 
-            <!-- Meet Our Founders
+            <!-- Meet Our Founders -->
             
-        </div> -->
+        </div>
 
         <!-- CTA for this section -->
-        <!-- <div class="section-cta">
+        <div class="section-cta">
             <p class="cta-text">Still unsure? Talk to us and we'll help you decide what's right.</p>
             <div class="cta-buttons">
                 <a href="https://wa.me/919876543210" class="btn btn-primary" target="_blank">
@@ -344,7 +438,7 @@
                 </a>
                 <a href="./book-trial.html" class="btn btn-outline">BOOK A TRIAL CLASS</a>
             </div>
-        </div> -->
+        </div>
     </div>
     </section>
 
@@ -550,7 +644,7 @@
     </section>
 
     <!-- FAQs Section -->
-    <!-- <section class="faqs-section" id="faq">
+    <section class="faqs-section" id="faq">
         <div class="container">
             <h2 class="section-title">Frequently Asked Questions</h2>
             <p class="section-subtitle">Everything you need to know about our training programs</p>
@@ -727,7 +821,7 @@
                 </a>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- Final CTA Section -->
     <section class="final-cta" id="cta">
@@ -986,7 +1080,7 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2025 Mumbai Movement Academy. All rights reserved.</p>
+                <p>&copy; 2026 Mumbai Movement Academy. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#privacy">Privacy Policy</a>
                     <a href="#terms">Terms of Service</a>

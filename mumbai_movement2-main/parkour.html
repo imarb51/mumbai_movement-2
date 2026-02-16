@@ -41,7 +41,19 @@
 
     <!-- Hero Section -->
     <section class="hero parkour-hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('img/main_banner.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-5.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-11.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-18.jpg');"></div>
+        </div>
         <div class="hero-overlay"></div>
+        <button class="hero-arrow hero-arrow-left" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="hero-arrow hero-arrow-right" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
         <div class="hero-content">
             <h1 class="hero-title animate-fade-in">What Is Parkour?</h1>
             <p class="hero-subtitle animate-fade-in-delay">The art of efficient movement — taught safely, structured, and supervised</p>
@@ -52,6 +64,30 @@
             </div>
         </div>
     </section>
+
+    <!-- Hero Scrolling Banner -->
+    <div class="hero-scroll-banner">
+        <div class="hero-scroll-track">
+            <div class="hero-scroll-content">
+                <span class="scroll-item"><span class="scroll-dot"></span> Age-appropriate classes</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Trained and experienced coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe indoor setups</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Beginner-friendly approach</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5+ Years of Experience</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 1000+ Students Trained</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5 Locations across Mumbai</span>
+            </div>
+            <div class="hero-scroll-content" aria-hidden="true">
+                <span class="scroll-item"><span class="scroll-dot"></span> Age-appropriate classes</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Trained and experienced coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe indoor setups</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Beginner-friendly approach</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5+ Years of Experience</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 1000+ Students Trained</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> 5 Locations across Mumbai</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Introduction Section -->
     <section class="parkour-intro">
@@ -337,6 +373,18 @@
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are there any fitness requirements before joining?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There are no strict fitness requirements. A basic level of mobility helps, but training is adapted so beginners can build strength and confidence over time.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
                         <span>What age can start parkour training?</span>
                         <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -349,13 +397,109 @@
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>How long does it take to learn parkour?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Basic movement skills can be learned within a few months of consistent training. Mastery takes time and regular practice, and progress varies from person to person.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
                         <span>How often should one train?</span>
                         <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>We recommend training 2-3 times per week for steady progress. Once a week helps maintain skills, while 3+ times per week accelerates development.</p>
+                        <p>Training once a week can help you get started, but attending twice a week is recommended to see steady progress and improvement.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Is parkour dangerous?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Like any physical activity, parkour involves movement and effort. However, when taught properly with supervision, structured progressions, and safety protocols, risks are significantly reduced.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What safety measures are followed during training?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Classes include warm-ups, technique drills, and controlled progressions. Coaches emphasise proper landing, awareness, and gradual skill development rather than risky movements.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Do you teach flips and tricks?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Flips and advanced movements are introduced only in higher-level batches, once students have built sufficient strength, control, and understanding. Beginners focus on foundational skills.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are children of different ages trained together?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Batches are usually grouped based on age, height, and ability. This ensures children train with peers at a similar developmental stage.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What happens during a typical parkour class?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A class usually includes: a guided warm-up or movement game, skill practice and applications, a fitness-based activity, and light stretching to end the session. Classes are designed to be engaging, structured, and supportive.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>What should my child or I wear to class?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Comfortable clothing that allows free movement is best. Clean indoor shoes are required, as outdoor shoes are not allowed. Bringing a water bottle is recommended.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFAQ(this)">
+                        <span>Are there specific shoes required for parkour?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Shoes with good grip, flexibility, and support work well. Most regular athletic or running shoes are suitable.</p>
                     </div>
                 </div>
 
@@ -373,13 +517,17 @@
 
                 <div class="faq-item">
                     <button class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Do you teach flips and tricks?</span>
+                        <span>Where can I see class schedules and fees?</span>
                         <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M19 9l-7 7-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Flips and advanced movements are introduced only in higher-level batches, once students have built sufficient strength, control, and understanding. Beginners focus on foundational skills first.</p>
+                        <p>Class schedules and fees vary by location and age group. To view accurate and updated information, please visit the <a href="locations.html" style="color: var(--primary-blue);">Locations page</a> or speak to us directly.</p>
+                        <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="https://wa.me/919876543210" class="btn btn-primary" target="_blank" style="font-size: 0.85rem; padding: 8px 20px;">Talk to Us on WhatsApp</a>
+                            <a href="locations.html" class="btn btn-outline" style="font-size: 0.85rem; padding: 8px 20px;">View Classes Near You</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -485,7 +633,7 @@
 
             <!-- Footer Bottom -->
             <div class="footer-bottom">
-                <p>&copy; 2025 Mumbai Movement Academy. All rights reserved.</p>
+                <p>&copy; 2026 Mumbai Movement Academy. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="#privacy">Privacy Policy</a>
                     <a href="#terms">Terms of Service</a>
