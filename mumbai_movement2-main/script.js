@@ -703,8 +703,8 @@ if (document.readyState === 'loading') {
         overlay.classList.remove('active');
     }
 
-    // Show popup on page load (small delay for smooth UX)
-    setTimeout(showPopup, 1500);
+    // Show popup after 60 seconds
+    setTimeout(showPopup, 60000);
 
     // Close button
     if (closeBtn) {

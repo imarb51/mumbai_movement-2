@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Climbing - Mumbai Movement Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Programs <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="kids-programs.html">Kids Programs</a></li>
+                        <li><a href="adults-programs.html">Adults Programs</a></li>
+                        <li><a href="schools-organizations.html">Schools & Organizations</a></li>
+                        <li><a href="specialized-programs.html">Specialized Programs</a></li>
+                    </ul>
+                </li>
+                <li><a href="parkour.html">What is Parkour</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="merchandise.html">Merch</a></li>
+                <li><a href="./book-trial.html" class="btn-nav-trial">BOOK TRIAL CLASS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero parkour-hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('parkour-img/Parkour ref images/CLIMBING-CLASSES-HEADER-1-1.webp');"></div>
+            <div class="hero-slide" style="background-image: url('parkour-img/Parkour ref images/Intro-to-Climbing.png');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-11.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-18.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <button class="hero-arrow hero-arrow-left" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="hero-arrow hero-arrow-right" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">ROCK CLIMBING</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Climb higher. Think smarter. Push your limits.</p>
+        </div>
+    </section>
+
+    <!-- Scrolling Banner -->
+    <div class="hero-scroll-banner">
+        <div class="hero-scroll-track">
+            <div class="hero-scroll-content">
+                <span class="scroll-item"><span class="scroll-dot"></span> Indoor Climbing Walls</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Bouldering & Top-Rope</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> All Levels Welcome</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Expert Instructors</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe Environment</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Full-Body Workout</span>
+            </div>
+            <div class="hero-scroll-content" aria-hidden="true">
+                <span class="scroll-item"><span class="scroll-dot"></span> Indoor Climbing Walls</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Bouldering & Top-Rope</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> All Levels Welcome</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Expert Instructors</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Safe Environment</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Full-Body Workout</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- What is Rock Climbing -->
+    <section class="parkour-intro" id="what">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-content">
+                    <h2 class="section-title">What is Rock Climbing?</h2>
+                    <p class="intro-text">Rock climbing is a full-body sport that challenges you physically and mentally. It involves ascending natural or artificial rock walls using your hands, feet, and body positioning to navigate routes of varying difficulty.</p>
+                    <p class="intro-text">At MMA, we offer indoor climbing in a safe, controlled environment with professional-grade walls and equipment. Our trained instructors guide you through technique, safety protocols, and progressive challenges suited to your ability.</p>
+                    <div class="intro-stats">
+                        <div class="stat">
+                            <span class="stat-number">Full</span>
+                            <span class="stat-label">Body Workout</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">All</span>
+                            <span class="stat-label">Fitness Levels</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">Pro</span>
+                            <span class="stat-label">Equipment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="parkour-img/Parkour ref images/Intro-to-Climbing.png" alt="Rock climbing at MMA">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Training Works -->
+    <section class="how-training-works" id="training">
+        <div class="container">
+            <h2 class="section-title">How Our Climbing Program Works</h2>
+            <p class="section-subtitle">A structured path from first climb to advanced routes</p>
+            
+            <div class="training-steps">
+                <div class="training-step animate-on-scroll">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Safety Briefing</h3>
+                        <p>Learn proper harness use, belay techniques, and climbing etiquette. Safety is always our first priority.</p>
+                    </div>
+                </div>
+                <div class="training-step animate-on-scroll">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Technique Foundation</h3>
+                        <p>Master footwork, hand positioning, body tension, and efficient movement patterns on beginner-friendly routes.</p>
+                    </div>
+                </div>
+                <div class="training-step animate-on-scroll">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Route Progression</h3>
+                        <p>Gradually tackle more challenging routes as your strength, technique, and problem-solving skills develop.</p>
+                    </div>
+                </div>
+                <div class="training-step animate-on-scroll">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Advanced Skills</h3>
+                        <p>Develop lead climbing abilities, dynamic movement, overhangs, and competition-style bouldering techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climbing Types -->
+    <section class="parkour-levels" id="levels">
+        <div class="container">
+            <h2 class="section-title">Climbing Disciplines</h2>
+            <p class="section-subtitle">Different styles to suit your goals</p>
+            
+            <div class="levels-grid">
+                <div class="level-card animate-on-scroll">
+                    <div class="level-header">
+                        <span class="level-badge">BOULDERING</span>
+                        <h3>Short Wall Climbing</h3>
+                    </div>
+                    <div class="level-body">
+                        <ul class="level-skills">
+                            <li>Climbing without ropes on short walls</li>
+                            <li>Crash pads for safety</li>
+                            <li>Problem-solving focused</li>
+                            <li>Great for building technique</li>
+                            <li>Social and accessible</li>
+                            <li>Perfect for beginners</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="level-card animate-on-scroll">
+                    <div class="level-header">
+                        <span class="level-badge">TOP ROPE</span>
+                        <h3>Roped Climbing</h3>
+                    </div>
+                    <div class="level-body">
+                        <ul class="level-skills">
+                            <li>Rope anchored at the top</li>
+                            <li>Belayer manages the rope</li>
+                            <li>Safe introduction to height</li>
+                            <li>Builds endurance</li>
+                            <li>Longer routes</li>
+                            <li>Trust and teamwork</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="level-card animate-on-scroll">
+                    <div class="level-header">
+                        <span class="level-badge">LEAD CLIMBING</span>
+                        <h3>Advanced Roped</h3>
+                    </div>
+                    <div class="level-body">
+                        <ul class="level-skills">
+                            <li>Clip rope as you ascend</li>
+                            <li>Higher mental demand</li>
+                            <li>Competition format</li>
+                            <li>Route reading skills</li>
+                            <li>Fall management</li>
+                            <li>Peak climbing experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Climb Section -->
+    <section class="myths-reality" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Rock Climbing?</h2>
+            <p class="section-subtitle">More than just a physical workout</p>
+            
+            <div class="myths-grid">
+                <div class="myth-card animate-on-scroll">
+                    <div class="myth-content">
+                        <span class="myth-label">BENEFIT</span>
+                        <p class="myth-text">Full-Body Strength</p>
+                    </div>
+                    <div class="reality-content">
+                        <p>Climbing engages every muscle group — from your fingers and forearms to your core and legs. It's a complete workout disguised as play.</p>
+                    </div>
+                </div>
+                <div class="myth-card animate-on-scroll">
+                    <div class="myth-content">
+                        <span class="myth-label">BENEFIT</span>
+                        <p class="myth-text">Mental Sharpness</p>
+                    </div>
+                    <div class="reality-content">
+                        <p>Every route is a puzzle. Climbing trains focus, decision-making, and problem-solving in a way that few other activities can match.</p>
+                    </div>
+                </div>
+                <div class="myth-card animate-on-scroll">
+                    <div class="myth-content">
+                        <span class="myth-label">BENEFIT</span>
+                        <p class="myth-text">Confidence Building</p>
+                    </div>
+                    <div class="reality-content">
+                        <p>Overcoming fear of heights and completing challenging routes builds a deep sense of accomplishment and self-belief.</p>
+                    </div>
+                </div>
+                <div class="myth-card animate-on-scroll">
+                    <div class="myth-content">
+                        <span class="myth-label">BENEFIT</span>
+                        <p class="myth-text">Community & Fun</p>
+                    </div>
+                    <div class="reality-content">
+                        <p>Climbing is inherently social. You'll be part of a supportive community that celebrates progress and encourages each other.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="parkour-faqs" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Common questions about rock climbing at MMA</p>
+            
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Is rock climbing safe for beginners?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Indoor climbing is one of the safest adventure sports when done with proper equipment and trained instructors. We provide all safety gear and thorough briefings before every session.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Do I need to be physically fit to start?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No prior fitness required. Climbing is technique-driven — good footwork and body positioning matter more than pure strength. You'll build fitness as you climb.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>What should I wear?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Comfortable athletic clothing that allows full range of movement. Avoid loose or baggy clothes. We provide climbing shoes and all safety equipment.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>I'm afraid of heights. Can I still climb?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Many of our students started with a fear of heights. Bouldering walls are low enough to feel comfortable, and you progress at your own pace. Most people surprise themselves within the first session.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Can kids participate?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We have climbing programs for kids as well. Check our <a href="kids-programs.html" style="color: var(--primary-blue);">Kids Programs</a> page for more details on age-specific classes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="parkour-cta" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Climbing?</h2>
+                <p>Book a trial session and experience indoor climbing with expert instruction and professional equipment.</p>
+                <div class="cta-buttons">
+                    <a href="./book-trial.html" class="btn-primary">Book Your Trial Class</a>
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20Rock%20Climbing%20classes" class="btn-secondary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+                    </div>
+                    <p class="footer-description">Mumbai Movement Academy - Redefining fitness through movement since 2019.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@MumbaiMovementAcademy" target="_blank" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column" id="links">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="./book-trial.html">Contact</a></li>
+                        <li><a href="https://wa.me/919876543210" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column" id="locations">
+                    <h4>OUR LOCATIONS</h4>
+                    <ul>
+                        <li><a href="locations.html">Andheri</a></li>
+                        <li><a href="locations.html">Bandra</a></li>
+                        <li><a href="locations.html">Powai</a></li>
+                        <li><a href="locations.html">Breach Candy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column" id="programs">
+                    <h4>PROGRAMS</h4>
+                    <ul>
+                        <li><a href="kids-programs.html">Kids Programs</a></li>
+                        <li><a href="adults-programs.html">Adults Programs</a></li>
+                        <li><a href="schools-organizations.html">Schools & Organizations</a></li>
+                        <li><a href="specialized-programs.html">Specialized Programs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mumbai Movement Academy. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

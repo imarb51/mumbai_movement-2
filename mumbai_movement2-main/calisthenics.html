@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calisthenics - Mumbai Movement Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-dropdown">
+                    <a href="#" class="dropdown-toggle">Programs <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="kids-programs.html">Kids Programs</a></li>
+                        <li><a href="adults-programs.html">Adults Programs</a></li>
+                        <li><a href="schools-organizations.html">Schools & Organizations</a></li>
+                        <li><a href="specialized-programs.html">Specialized Programs</a></li>
+                    </ul>
+                </li>
+                <li><a href="parkour.html">What is Parkour</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="merchandise.html">Merch</a></li>
+                <li><a href="./book-trial.html" class="btn-nav-trial">BOOK TRIAL CLASS</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero parkour-hero" id="home">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: url('parkour-img/Parkour ref images/Adult-class-54.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-5.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-11.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/2025_04_29_Day1-18.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <button class="hero-arrow hero-arrow-left" aria-label="Previous slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="hero-arrow hero-arrow-right" aria-label="Next slide">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-in">CALISTHENICS</h1>
+            <p class="hero-subtitle animate-fade-in-delay">Master your body weight. Build real-world strength.</p>
+        </div>
+    </section>
+
+    <!-- Scrolling Banner -->
+    <div class="hero-scroll-banner">
+        <div class="hero-scroll-track">
+            <div class="hero-scroll-content">
+                <span class="scroll-item"><span class="scroll-dot"></span> Bodyweight Training</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Strength & Control</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> All Levels Welcome</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Expert Coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Progressive System</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> No Equipment Needed</span>
+            </div>
+            <div class="hero-scroll-content" aria-hidden="true">
+                <span class="scroll-item"><span class="scroll-dot"></span> Bodyweight Training</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Strength & Control</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> All Levels Welcome</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Expert Coaches</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> Progressive System</span>
+                <span class="scroll-item"><span class="scroll-dot"></span> No Equipment Needed</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- What is Calisthenics -->
+    <section class="parkour-intro" id="what">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-content">
+                    <h2 class="section-title">What is Calisthenics?</h2>
+                    <p class="intro-text">Calisthenics is a form of strength training that uses your own body weight as resistance. It focuses on fundamental movement patterns — pushing, pulling, squatting, and holding — to build functional strength, control, and mobility.</p>
+                    <p class="intro-text">Unlike gym-based training that isolates muscles with machines, calisthenics develops strength through compound movements that mirror how your body naturally moves. It builds coordination, balance, and body awareness alongside raw strength.</p>
+                    <div class="intro-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Bodyweight</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">All</span>
+                            <span class="stat-label">Fitness Levels</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Teaching</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="intro-image">
+                    <img src="parkour-img/Parkour ref images/VV_Website_Personal-Coaching-Sessions-1.jpg" alt="Calisthenics training at MMA">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Training Works -->
+    <section class="how-training-works" id="training">
+        <div class="container">
+            <h2 class="section-title">How Our Calisthenics Training Works</h2>
+            <p class="section-subtitle">A structured approach to bodyweight mastery</p>
+            
+            <div class="training-steps">
+                <div class="training-step animate-on-scroll">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Assessment</h3>
+                        <p>We evaluate your current strength, mobility, and movement quality to understand where you are and set realistic goals.</p>
+                    </div>
+                </div>
+                <div class="training-step animate-on-scroll">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Foundation Building</h3>
+                        <p>Master the fundamentals — proper push-ups, pull-ups, squats, and core holds. These form the base for everything that follows.</p>
+                    </div>
+                </div>
+                <div class="training-step animate-on-scroll">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Progressive Overload</h3>
+                        <p>Gradually increase difficulty through leverage changes, tempo variations, and advanced progressions tailored to your level.</p>
+                    </div>
+                </div>
+                <div class="training-step animate-on-scroll">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Skill Development</h3>
+                        <p>Work towards advanced skills like muscle-ups, handstands, levers, and planches as your strength and control improve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You'll Learn -->
+    <section class="parkour-levels" id="levels">
+        <div class="container">
+            <h2 class="section-title">What You'll Learn</h2>
+            <p class="section-subtitle">From basics to advanced bodyweight skills</p>
+            
+            <div class="levels-grid">
+                <div class="level-card animate-on-scroll">
+                    <div class="level-header">
+                        <span class="level-badge">FOUNDATION</span>
+                        <h3>Beginner</h3>
+                    </div>
+                    <div class="level-body">
+                        <ul class="level-skills">
+                            <li>Push-up progressions</li>
+                            <li>Pull-up training</li>
+                            <li>Squat variations</li>
+                            <li>Core conditioning</li>
+                            <li>Mobility & flexibility</li>
+                            <li>Movement fundamentals</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="level-card animate-on-scroll">
+                    <div class="level-header">
+                        <span class="level-badge">STRENGTH</span>
+                        <h3>Intermediate</h3>
+                    </div>
+                    <div class="level-body">
+                        <ul class="level-skills">
+                            <li>Dips & ring work</li>
+                            <li>Handstand progressions</li>
+                            <li>Pistol squats</li>
+                            <li>L-sits & V-sits</li>
+                            <li>Muscle-up training</li>
+                            <li>Advanced core work</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="level-card animate-on-scroll">
+                    <div class="level-header">
+                        <span class="level-badge">MASTERY</span>
+                        <h3>Advanced</h3>
+                    </div>
+                    <div class="level-body">
+                        <ul class="level-skills">
+                            <li>Front & back levers</li>
+                            <li>Planche progressions</li>
+                            <li>Free-standing handstands</li>
+                            <li>Human flag</li>
+                            <li>One-arm pull-up training</li>
+                            <li>Combination flows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section (using myths-reality layout) -->
+    <section class="myths-reality" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Calisthenics?</h2>
+            <p class="section-subtitle">Real benefits backed by practice</p>
+            
+            <div class="myths-grid">
+                <div class="myth-card animate-on-scroll">
+                    <div class="myth-content">
+                        <span class="myth-label">BENEFIT</span>
+                        <p class="myth-text">Functional Strength</p>
+                    </div>
+                    <div class="reality-content">
+                        <p>Build strength that translates to real-life movements. Calisthenics trains your body as a unit, not isolated muscles.</p>
+                    </div>
+                </div>
+                <div class="myth-card animate-on-scroll">
+                    <div class="myth-content">
+                        <span class="myth-label">BENEFIT</span>
+                        <p class="myth-text">No Equipment Required</p>
+                    </div>
+                    <div class="reality-content">
+                        <p>Train anywhere with minimal equipment. Your body is the gym. All you need is a pull-up bar and the floor.</p>
+                    </div>
+                </div>
+                <div class="myth-card animate-on-scroll">
+                    <div class="myth-content">
+                        <span class="myth-label">BENEFIT</span>
+                        <p class="myth-text">Injury Prevention</p>
+                    </div>
+                    <div class="reality-content">
+                        <p>Strengthen joints, tendons, and ligaments naturally. Bodyweight training builds resilient, balanced musculature.</p>
+                    </div>
+                </div>
+                <div class="myth-card animate-on-scroll">
+                    <div class="myth-content">
+                        <span class="myth-label">BENEFIT</span>
+                        <p class="myth-text">Lifelong Practice</p>
+                    </div>
+                    <div class="reality-content">
+                        <p>Scale difficulty up or down based on your level. Calisthenics grows with you — there's always a new skill to pursue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="parkour-faqs" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Common questions about calisthenics at MMA</p>
+            
+            <div class="faq-list">
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Do I need to be strong to start?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Not at all. Our program starts with the absolute basics. Whether you can do zero push-ups or twenty, we meet you where you are and build from there.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>How is this different from gym training?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Calisthenics focuses on compound movements using your body weight instead of machines. It builds functional strength, body control, and awareness that transfers to everyday activities and other sports.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>How often should I train?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We recommend 2-3 sessions per week for beginners. As you progress, you can increase frequency. Consistency matters more than intensity when starting out.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>Can I combine calisthenics with parkour or climbing?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. Many of our students train in multiple disciplines. Calisthenics builds the strength foundation that directly supports parkour and climbing performance.</p>
+                    </div>
+                </div>
+                <div class="faq-item animate-on-scroll">
+                    <button class="faq-question">
+                        <span>What age group is this for?</span>
+                        <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our calisthenics program is primarily designed for adults (18+), though teens (13+) can participate with appropriate modifications. There is no upper age limit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="parkour-cta" id="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Calisthenics Journey?</h2>
+                <p>Book a trial class and experience bodyweight training with expert coaching in a supportive environment.</p>
+                <div class="cta-buttons">
+                    <a href="./book-trial.html" class="btn-primary">Book Your Trial Class</a>
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I'm%20interested%20in%20Calisthenics%20classes" class="btn-secondary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="logo.svg" alt="Movement Academy Logo" class="logo-img">
+                    </div>
+                    <p class="footer-description">Mumbai Movement Academy - Redefining fitness through movement since 2019.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="1" fill="currentColor"/></svg>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.youtube.com/@MumbaiMovementAcademy" target="_blank" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column" id="links">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="./book-trial.html">Contact</a></li>
+                        <li><a href="https://wa.me/919876543210" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column" id="locations">
+                    <h4>OUR LOCATIONS</h4>
+                    <ul>
+                        <li><a href="locations.html">Andheri</a></li>
+                        <li><a href="locations.html">Bandra</a></li>
+                        <li><a href="locations.html">Powai</a></li>
+                        <li><a href="locations.html">Breach Candy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column" id="programs">
+                    <h4>PROGRAMS</h4>
+                    <ul>
+                        <li><a href="kids-programs.html">Kids Programs</a></li>
+                        <li><a href="adults-programs.html">Adults Programs</a></li>
+                        <li><a href="schools-organizations.html">Schools & Organizations</a></li>
+                        <li><a href="specialized-programs.html">Specialized Programs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mumbai Movement Academy. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
